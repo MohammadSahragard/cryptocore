@@ -2,7 +2,7 @@
 
 import { NextUIProvider } from '@nextui-org/react';
 
-export function Providers({ children }) {
+export const Providers = ({ children }) => {
     return (
         <NextUIProvider>
             {children}
