@@ -30,6 +30,7 @@ const Coins = () => {
 
     // options (targetCurrency & currentPage);
     const options = useSelector(state => state.options);
+    const { targetCurrency, currenciesCurrentPage } = options;
 
     // states
     const [data, setData] = useState({});
@@ -39,15 +40,15 @@ const Coins = () => {
     useEffect(() => {
         const fetchData = async () => {
             const data = await getData(
-                options?.targetCurrency?.code ?? 'usd',
-                options?.currenciesCurrentPage ?? 1
+                targetCurrency.code,
+                currenciesCurrentPage
             );
 
             setData(data);
         };
 
         fetchData();
-    }, [options.targetCurrency, options.currenciesCurrentPage]);
+    }, [targetCurrency, currenciesCurrentPage]);
 
 
 
