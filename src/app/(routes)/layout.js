@@ -25,6 +25,7 @@ import Error from './error';
 export const metadata = {
   title: 'Cryptocore | Greatest Crypto Market',
   description: 'One of the biggest cryptocurrency market in web.',
+  icons: '/images/logo.svg'
 };
 
 const RootLayout = ({ children }) => {
