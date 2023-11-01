@@ -1,3 +1,55 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.dark *::-webkit-scrollbar {
+    width: 6px;
+    background-color: #1E283C;
+}
+.dark *::-webkit-scrollbar-thumb {
+    background-color: #55667c;
+    border: 2px solid #1E283C;
+}
+.light *::-webkit-scrollbar {
+    width: 6px;
+    background-color: #cbd5e1;
+}
+.light *::-webkit-scrollbar-thumb {
+    background-color: #8A92B2;
+    border: 2px solid #cbd5e1;
+}
+
+
+/* ------ chart styles */
+/* toolbar styles */
+.apexcharts-toolbar {
+    display: flex;
+    gap: 10px;
+    padding: 2px 0;
+    max-width: auto;
+}
+.apexcharts-toolbar div {
+    height: 100%;
+    transform: scale(1);
+    width: 20px;
+}
+.apexcharts-toolbar div.apexcharts-selected {
+    color: #006FEE;
+}
+/* tooltip styles */
+.apexcharts-tooltip {
+    background: #42475375 !important;
+    box-shadow: none !important;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+.apexcharts-tooltip-title {
+    background: #41507575 !important;
+}
+
+
+/* coin description */
+.coin-description a {
+    text-decoration: underline;
+    color: #7828C8;
+}

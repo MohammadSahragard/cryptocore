@@ -1,14 +1,14 @@
 import { Chip } from "@nextui-org/react";
 
 
-const Badge = ({ children, icon }) => {
+const Badge = ({ children, icon, customClassName }) => {
     return (
         <Chip
-            className='rounded'
-            startContent={icon ? <i className={`fa fa-${icon}`}></i> : null}
+            className={`rounded flex items-center gap-1 ${customClassName ? customClassName : undefined}`}
+            startContent={icon ? <i className={icon}></i> : null}
             size='sm'
         >
-            <span> {children}</span>
+            <span>{children}</span>
         </Chip>
     );
 };

@@ -1,10 +1,6 @@
-const Title = ({ children, customClassName, customColor, customAttr }) => {
+const Title = ({ children, customClassName }) => {
     return (
-        <h2
-            className={`font-bold text-xl 
-                        ${customColor ? '' : 'text-slate-900 dark:text-slate-200'}
-                        ${customClassName}`}
-        >
+        <h2 className={`font-bold text-foreground text-[15px] ${customClassName}`}>
             {children}
         </h2>
     );

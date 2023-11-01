@@ -1,23 +1,27 @@
 "use client";
 
-import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { Pagination as NextUiPagination } from "@nextui-org/react";
+//* actions
+import { changeCurrenciesCurrentPage } from "@/redux/features/global-options/optionsSlice";
 
 
 const Pagination = () => {
 
-    const [currentPage, setCurrentPage] = useState(1);
+    const dispatch = useDispatch();
+    const currentPage = useSelector(state => state.options.currenciesCurrentPage);
 
 
     return (
         <NextUiPagination
+            className='w-max'
             classNames={{
                 cursor: 'bg-gradient-to-br from-blue-500 to-fuchsia-500'
             }}
             variant='bordered'
             page={currentPage}
-            onChange={setCurrentPage}
-            total={250}
+            onChange={page => dispatch(changeCurrenciesCurrentPage(page))}
+            total={107}
         />
     );
 };
