@@ -93,11 +93,8 @@ const CoinCommunityInfo = ({ data }) => {
                                 <div className='flex justify-end flex-wrap gap-1'>
                                     {
                                         links?.blockchain_site?.map(explorer => explorer &&
-                                            <Link href={explorer}>
-                                                <Badge
-                                                    key={explorer}
-                                                    icon='far fa-link-simple'
-                                                >
+                                            <Link href={explorer} key={explorer}>
+                                                <Badge icon='far fa-link-simple'>
                                                     {getMainLink(explorer)}
                                                 </Badge>
                                             </Link>
@@ -129,11 +126,8 @@ const CoinCommunityInfo = ({ data }) => {
                                 <div className='flex justify-end flex-wrap gap-1'>
                                     {
                                         data?.categories?.map(category => category &&
-                                            <Link href={category}>
-                                                <Badge
-                                                    key={category}
-                                                    icon='fad fa-grid-2'
-                                                >
+                                            <Link href={category} key={category}>
+                                                <Badge icon='fad fa-grid-2'>
                                                     {category}
                                                 </Badge>
                                             </Link>

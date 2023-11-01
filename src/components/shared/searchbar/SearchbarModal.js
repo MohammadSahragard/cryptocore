@@ -1,17 +1,11 @@
-'use client';
-
-import { useState } from 'react';
-
 //* components
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure } from '@nextui-org/modal';
 import { Button } from '@nextui-org/button';
-import { Input } from '@nextui-org/input';
 import Searchbar from './Searchbar';
 
 
 const SearchbarModal = () => {
     
-    const [targetCurrency, setTargetCurrency] = useState('USD');
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
 

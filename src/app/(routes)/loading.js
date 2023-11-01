@@ -1,5 +1,5 @@
 //* components
-import Image from "next/image";
+import Image from 'next/image';
 
 const Loading = () => {
     // Or a custom loading skeleton component
@@ -9,6 +9,7 @@ const Loading = () => {
                 src='/images/logo.svg'
                 width={60}
                 height={60}
+                alt='Loading ...'
                 className='animate-spin'
             />
         </div>

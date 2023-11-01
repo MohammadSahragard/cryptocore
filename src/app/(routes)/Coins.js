@@ -47,7 +47,7 @@ const Coins = () => {
         };
 
         fetchData();
-    }, [options]);
+    }, [options.targetCurrency, options.currenciesCurrentPage]);
 
 
 

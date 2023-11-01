@@ -53,7 +53,7 @@ const CoinDescription = ({ data }) => {
                 <Title>Description</Title>
                 {
                     data?.description?.en?
-                        convertStringToHTML(data?.description?.en).map(text => <p><Subtitle>{htmlParser.parse(text)}</Subtitle></p>) :
+                        convertStringToHTML(data?.description?.en).map((text, index) => <p key={index}><Subtitle>{htmlParser.parse(text)}</Subtitle></p>) :
                         <Subtitle>No information.</Subtitle>
                 }
             </div>
