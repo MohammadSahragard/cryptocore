@@ -9,7 +9,7 @@ import CryptoGridCard from '@/components/shared/cards/CryptoGridCard';
 import CryptoListCard from '@/components/shared/cards/CryptoListCard';
 import ListCardHeader from '@/components/shared/headers and navbar/ListCardHeader';
 
-import Loading from './loading';
+import Loading from '../../app/(routes)/loading';
 
 
 //* get data (coins info (coingecko api))
@@ -48,7 +48,7 @@ const Coins = () => {
         };
 
         fetchData();
-        
+
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [targetCurrency, currenciesCurrentPage]);
 

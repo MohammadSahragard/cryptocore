@@ -1,10 +1,10 @@
 import CoinHeader from "@/components/shared/headers and navbar/CoinHeader";
-import CoinChart from "./CoinChart";
-import CoinMarketInfo from "./CoinMarketInfo";
-import CoinCommunityInfo from "./CoinCommunityInfo";
-import ProgressBarTodayVote from "./ProgressBarTodayVote";
-import CoinDescription from "./CoinDescription";
-import CoinDeveloperInfo from "./CoinDeveloperInfo";
+import CoinChart from "@/components/shared/single coin components/CoinChart";
+import CoinMarketInfo from "@/components/shared/single coin components/CoinMarketInfo";
+import CoinCommunityInfo from "@/components/shared/single coin components/CoinCommunityInfo";
+import ProgressBarTodayVote from "@/components/shared/single coin components/ProgressBarTodayVote";
+import CoinDescription from "@/components/shared/single coin components/CoinDescription";
+import CoinDeveloperInfo from "@/components/shared/single coin components/CoinDeveloperInfo";
 
 //* get data (get coin info (coingecko api))
 const getData = async id => {

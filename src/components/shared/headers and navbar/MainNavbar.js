@@ -3,7 +3,6 @@
 import { useState } from 'react';
 
 //* components
-import Link from 'next/link';
 import {
     Navbar,
     NavbarBrand,
