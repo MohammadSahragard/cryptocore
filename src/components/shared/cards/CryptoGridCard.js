@@ -44,7 +44,7 @@ const CryptoGridCard = ({ data }) => {
                     </Link>
                     <div className='flex flex-col items-end'>
                         <Price>{current_price}</Price>
-                        <PercentBadge>{price_change_percentage_24h.toFixed(2)}</PercentBadge>
+                        <PercentBadge>{price_change_percentage_24h?.toFixed(2)}</PercentBadge>
                     </div>
                 </div>
 
@@ -64,7 +64,7 @@ const CryptoGridCard = ({ data }) => {
                 height='250px'
                 className='object-cover p-1 z-0 min-w-[300px] min-h-[180px]'
                 src={`https://quickchart.io/chart?bkg=transparent&c={type:'sparkline',data:{datasets:[{backgroundColor:'transparent',borderWidth:'2',borderColor:'${price_change_percentage_7d_in_currency < 0 ?'red':'green'}',data:[${sparkline_in_7d.price}]}]}}`}
-                alt={`${name} (${symbol.toUpperCase()}) 7d chart`}
+                alt={`${name} (${symbol?.toUpperCase()}) 7d chart`}
             />
 
             <Badge

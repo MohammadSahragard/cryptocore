@@ -293,7 +293,7 @@ const CoinChart = ({ data, coinId }) => {
                 }
             });
         };
-    }, [targetCurrency?.code, timeFrame, coinId]);
+    }, [targetCurrency, timeFrame, coinId]);
 
 
 

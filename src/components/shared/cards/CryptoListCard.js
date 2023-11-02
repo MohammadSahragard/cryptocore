@@ -48,19 +48,19 @@ const CryptoListCard = ({ data }) => {
 
                 <Link href={`/coin/${id}`} className="flex items-center gap-2">
                     <Title>{name}</Title>
-                    <Subtitle>{symbol.toUpperCase()}</Subtitle>
+                    <Subtitle>{symbol?.toUpperCase()}</Subtitle>
                 </Link>
 
                 <Price>{current_price}</Price>
 
                 <PercentBadge customVariant='light'>
-                    {price_change_percentage_1h_in_currency.toFixed(2)}
+                    {price_change_percentage_1h_in_currency?.toFixed(2)}
                 </PercentBadge>
                 <PercentBadge customVariant='light'>
-                    {price_change_percentage_24h.toFixed(2)}
+                    {price_change_percentage_24h?.toFixed(2)}
                 </PercentBadge>
                 <PercentBadge customVariant='light'>
-                    {price_change_percentage_7d_in_currency.toFixed(2)}
+                    {price_change_percentage_7d_in_currency?.toFixed(2)}
                 </PercentBadge>
 
                 <Price>{market_cap}</Price>
@@ -72,7 +72,7 @@ const CryptoListCard = ({ data }) => {
                     radius='sm'
                     className='max-h-[60px] pr-2'
                     src={`https://quickchart.io/chart?bkg=transparent&c={type:'sparkline',data:{datasets:[{backgroundColor:'transparent',borderWidth:'3',borderColor:'${price_change_percentage_7d_in_currency < 0 ?'red':'green'}',data:[${sparkline_in_7d.price}]}]}}`}
-                    alt={`${name} (${symbol.toUpperCase()}) 7d chart`}
+                    alt={`${name} (${symbol?.toUpperCase()}) 7d chart`}
                 />
             </CardBody>
         </Card>

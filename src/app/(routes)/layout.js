@@ -31,7 +31,7 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html lang='en'>
-      <body className={`${nunitoSans.className} theme-app dark`}>
+      <body className={nunitoSans.className}>
         <Providers>
           <div className='h-screen bg-background grid grid-rows-[max-content_max-content_auto] overflow-hidden'>
 

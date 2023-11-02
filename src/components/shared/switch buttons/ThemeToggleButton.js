@@ -1,6 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+// public
+import { useState, useEffect } from 'react';
+import { useTheme } from "next-themes";
 
 //* components
 import { Tabs, Tab } from '@nextui-org/react';
@@ -9,24 +11,24 @@ import { Tabs, Tab } from '@nextui-org/react';
 const ThemeToggleButton = () => {
 
     // states
-    const [selected, setSelected] = useState('dark');
+    const { theme, setTheme } = useTheme()
+    const [mounted, setMounted] = useState(false)
+    
+    
+    
+    useEffect(() => {
+        setMounted(true);
+    }, [])
 
-    // functions
-    const app = document.querySelector('.theme-app');
-
-    if (selected === 'dark') {
-        app?.classList?.replace('light', 'dark');
-    } else {
-        app?.classList?.replace('dark', 'light');
-    };
+    if(!mounted) return null
 
 
     return (
         <Tabs
             size='md'
             color='primary'
-            selectedKey={selected}
-            onSelectionChange={setSelected}
+            selectedKey={theme}
+            onSelectionChange={setTheme}
             classNames={{
                 tabList: 'bg-default'
             }}

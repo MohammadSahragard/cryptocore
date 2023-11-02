@@ -48,8 +48,6 @@ const Coins = () => {
         };
 
         fetchData();
-
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [targetCurrency, currenciesCurrentPage]);
 
 

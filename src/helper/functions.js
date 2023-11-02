@@ -81,14 +81,6 @@ const convertStringToHTML = htmlString => {
 };
 
 
-// Make a unique key for map element in jsx
-const keyElemMaker = () => {
-    const key = Math.random () * (Math.random () * 2);
-
-    return key;
-};
-
-
 
 
 
@@ -98,6 +90,5 @@ export {
     getPercentageTimeFrame, 
     getMainLink, 
     nFormatter,
-    convertStringToHTML,
-    keyElemMaker
+    convertStringToHTML
 };
