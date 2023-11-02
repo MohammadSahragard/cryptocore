@@ -79,7 +79,7 @@ const MainNavbar = () => {
                     <SelectLanguageInput />
                 </NavbarItem>
 
-                <NavbarItem>
+                <NavbarItem className='hidden md:flex'>
                     <ThemeToggleButton />
                 </NavbarItem>
 
@@ -102,6 +102,10 @@ const MainNavbar = () => {
 
                 <NavbarItem>
                     <SelectLanguageInput />
+                </NavbarItem>
+
+                <NavbarItem>
+                    <ThemeToggleButton />
                 </NavbarItem>
             </NavbarMenu>
         </Navbar>
