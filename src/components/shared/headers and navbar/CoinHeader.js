@@ -33,15 +33,15 @@ const CoinsHeader = ({ data }) => {
                     height={40}
                 />
 
-                <div className="flex items-center gap-2">
-                    <Title>{name}</Title>
-                    <Subtitle>{symbol}</Subtitle>
+                <div className="flex flex-col md:flex-row md:items-center md:gap-2">
+                    <Title customClassName='leading-none'>{name}</Title>
+                    <Subtitle customClassName='leading-none'>{symbol?.toUpperCase()}</Subtitle>
                 </div>
             </div>
 
             <div className='flex justify-center gap-x-3 flex-wrap'>
                 <section className='flex items-center gap-2'>
-                    <Subtitle>Price: </Subtitle>
+                    <Subtitle customClassName='hidden md:block'>Price: </Subtitle>
                     <Price customClassName='text-primary font-normal'>{market_data?.current_price?.[targetCurrency.code]}</Price>
                     <PercentBadge customVariant='light' isArrowIcon>{market_data?.price_change_percentage_24h_in_currency?.[targetCurrency?.code].toFixed(1)}</PercentBadge>
                 </section>

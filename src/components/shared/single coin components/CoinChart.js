@@ -65,7 +65,7 @@ const CoinChart = ({ data, coinId }) => {
                         'Market Caps' : 'Vol') :
                 '',
 
-            type: chartType === 'line' ? (dataSeries === 'price' || dataSeries === 'market_caps' ? 'area' : 'bar') : 'candlestick',
+            type: chartType === 'line' ? 'area' : 'candlestick',
 
             data: areaChartData?.prices ?
                 (chartType === 'line' ?
