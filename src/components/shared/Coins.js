@@ -8,6 +8,12 @@ import { useSelector } from 'react-redux';
 import CryptoGridCard from '@/components/shared/cards/CryptoGridCard';
 import CryptoListCard from '@/components/shared/cards/CryptoListCard';
 import ListCardHeader from '@/components/shared/headers and navbar/ListCardHeader';
+import {
+    Table,
+    TableBody,
+    TableHeader,
+    TableColumn
+} from "@nextui-org/table";
 
 import Loading from '../../app/(routes)/loading';
 
@@ -30,7 +36,7 @@ const Coins = () => {
 
     // options (targetCurrency & currentPage);
     const options = useSelector(state => state.options);
-    const { targetCurrency, currenciesCurrentPage } = options;
+    const { targetCurrency, currenciesCurrentPage, coinsViewMode } = options;
 
     // states
     const [data, setData] = useState({});
@@ -53,16 +59,32 @@ const Coins = () => {
 
 
     return (
-        <div className={`gap-2 p-2 ${options.coinsViewMode === 'grid' ? 'grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))]' : 'flex flex-col flex-nowrap overflow-x-auto'}`}>
-            {options.coinsViewMode === 'list' && <ListCardHeader />}
+        <div className='p-2'>
             {
-                data?.length ?
-                    data?.map(coin =>
-                        options.coinsViewMode === 'list' ?
-                            <CryptoListCard key={coin.id} data={coin} /> :
-                            <CryptoGridCard key={coin.id} data={coin} />
-                    ) : <Loading />
+                coinsViewMode === 'grid' ?
+                    <div className='grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-2'>
+                        {
+                            data?.length ?
+                                data?.map(coin =>
+                                    <CryptoGridCard key={coin.id} data={coin} />
+                                ) : <Loading />
 
+                        }
+                    </div> : null
+            }
+            {
+                coinsViewMode === 'list' ?
+                    <div className='overflow-auto'>
+                        <ListCardHeader />
+                        <div className='flex flex-col gap-2 mt-2'>
+                            {
+                                data?.length ?
+                                    data?.map(coin =>
+                                        <CryptoListCard key={coin.id} data={coin} />
+                                    ) : <Loading />
+                            }
+                        </div>
+                    </div> : null
             }
         </div>
     );

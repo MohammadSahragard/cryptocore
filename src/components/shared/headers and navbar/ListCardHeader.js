@@ -4,9 +4,8 @@ import Title from "@/components/ui/Title";
 
 const ListCardHeader = () => {
     return (
-        <div className='h-10 px-2 border-b border-default-300 bg-default-100 backdrop-blur-lg
-                        sticky top-14
-                        grid grid-cols-[20px_auto_120px_60px_60px_60px_170px_170px] items-center gap-2
+        <div className='h-10 w-min px-2 border-b border-default-300
+                        grid grid-cols-[40px_minmax(160px,auto)_120px_60px_60px_60px_170px_170px] items-center gap-2
         '>
             <Title>#</Title>
             <Title>Coin</Title>
