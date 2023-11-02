@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 //* components
 import {
@@ -23,8 +23,10 @@ import { Divider } from '@nextui-org/react';
 
 
 const MainNavbar = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    const mainNavbarRef = useRef();
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const menuItems = [
         { label: 'Cryptocurrencies', href: '/' },
         { label: 'Exchanges', href: '/exchanges' },
@@ -32,6 +34,8 @@ const MainNavbar = () => {
         { label: 'Learn Crypto', href: '/tutorials' },
         { label: 'About Us', href: '/about' }
     ];
+
+
 
     return (
         <Navbar
@@ -43,6 +47,7 @@ const MainNavbar = () => {
             classNames={{
                 menu: 'bg-background/60 backdrop-blur-lg absolute top-full'
             }}
+            ref={mainNavbarRef}
         >
             {/* Logo and menu toggler on mobile view */}
             <NavbarContent justify='start'>
@@ -86,7 +91,7 @@ const MainNavbar = () => {
             </NavbarContent>
 
             {/* Navbar menu on mobile view */}
-            <NavbarMenu portalContainer={document.querySelector('.main-navbar')}>
+            <NavbarMenu portalContainer={mainNavbarRef?.current}>
                 {menuItems.map((item, index) => (
                     <NavbarMenuItem key={`${item.href}-${index}`} className='overflow-hidden'>
                         <NavbarLink href={item.href}>
