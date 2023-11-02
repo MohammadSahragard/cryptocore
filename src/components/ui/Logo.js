@@ -20,7 +20,7 @@ const Logo = () => {
                 height={40}
             />
 
-            <span className='bg-gradient-to-r from-[#00BFFF] to-[#8000FF] bg-clip-text text-transparent 
+            <span className='hidden sm:block bg-gradient-to-r from-[#00BFFF] to-[#8000FF] bg-clip-text text-transparent 
                              text-3xl font-black'
             >
                 Cryptocore
