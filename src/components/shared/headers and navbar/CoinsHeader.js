@@ -17,7 +17,7 @@ const CoinsHeader = () => {
                 <Button>Top Losers</Button>
             </div>
 
-            <div className='block lg:hidden'>
+            <div className='hidden sm:block lg:hidden'>
                 <SelectTabCoins />
             </div>
 

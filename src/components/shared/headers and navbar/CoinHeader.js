@@ -41,11 +41,11 @@ const CoinsHeader = ({ data }) => {
 
             <div className='flex justify-center gap-x-3 flex-wrap'>
                 <section className='flex items-center gap-2'>
-                    <Subtitle>Current Price: </Subtitle>
+                    <Subtitle>Price: </Subtitle>
                     <Price customClassName='text-primary font-normal'>{market_data?.current_price?.[targetCurrency.code]}</Price>
                     <PercentBadge customVariant='light' isArrowIcon>{market_data?.price_change_percentage_24h_in_currency?.[targetCurrency?.code].toFixed(1)}</PercentBadge>
                 </section>
-                <section className='flex items-center gap-2'>
+                <section className='hidden sm:flex items-center gap-2'>
                     <Subtitle customColor='text-primary'>
                         ₿ {separatorThreeToThree(market_data?.current_price?.btc, 8)}
                     </Subtitle>

@@ -4,6 +4,7 @@
 
 .dark *::-webkit-scrollbar {
     width: 6px;
+    height: 6px;
     background-color: #1E283C;
 }
 .dark *::-webkit-scrollbar-thumb {
@@ -12,6 +13,7 @@
 }
 .light *::-webkit-scrollbar {
     width: 6px;
+    height: 6px;
     background-color: #cbd5e1;
 }
 .light *::-webkit-scrollbar-thumb {
