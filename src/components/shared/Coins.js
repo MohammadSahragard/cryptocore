@@ -8,12 +8,6 @@ import { useSelector } from 'react-redux';
 import CryptoGridCard from '@/components/shared/cards/CryptoGridCard';
 import CryptoListCard from '@/components/shared/cards/CryptoListCard';
 import ListCardHeader from '@/components/shared/headers and navbar/ListCardHeader';
-import {
-    Table,
-    TableBody,
-    TableHeader,
-    TableColumn
-} from "@nextui-org/table";
 
 import Loading from '../../app/(routes)/loading';
 

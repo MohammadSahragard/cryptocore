@@ -1,5 +1,5 @@
 //* components
-import { Card, CardBody, Image } from "@nextui-org/react";
+import { Image } from "@nextui-org/image";
 import Title from "@/components/ui/Title";
 import Price from "@/components/ui/Price";
 import Subtitle from "@/components/ui/Subtitle";
