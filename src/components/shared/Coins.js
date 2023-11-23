@@ -56,7 +56,7 @@ const Coins = () => {
         <div className='p-2'>
             {
                 coinsViewMode === 'grid' ?
-                    <div className='grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-2'>
+                    <div className='grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-2'>
                         {
                             data?.length ?
                                 data?.map(coin =>

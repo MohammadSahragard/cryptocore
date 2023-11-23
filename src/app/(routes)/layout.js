@@ -46,11 +46,7 @@ const RootLayout = ({ children }) => {
               </div>
 
               {/* Routes are render here */}
-              <ErrorBoundary fallback={<Error />}>
-                <Suspense fallback={<Loading />}>
-                  {children}
-                </Suspense>
-              </ErrorBoundary>
+              {children}
             </div>
 
           </div>
