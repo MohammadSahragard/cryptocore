@@ -4,7 +4,7 @@ import Title from "@/components/ui/Title";
 
 const ListCardHeader = () => {
     return (
-        <div className='h-10 w-min px-2 border-b border-default-300
+        <div className='h-10 min-w-min w-full px-2 border-b border-default-300
                         grid grid-cols-[40px_minmax(160px,auto)_120px_60px_60px_60px_170px_170px] items-center gap-2
         '>
             <Title>#</Title>
