@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <img src="https://github.com/MohammadSahragard/cryptocore/blob/main/public/images/logo.svg?raw=true" alt="cryptocore logo" width="100" >
+</p>
 
-## Getting Started
+# Cryptocore
+Access my site at [cryptocore-marketplace.vercel.app](https://cryptocore-marketplace.vercel.app)
 
-First, run the development server:
+---
+### About the app
+Cryptocore is an exchange for digital currencies that gets its data from a real API ([CoinGecko](https://www.coingecko.com)). I designed the UI for this project myself and I believe it was a good experience for the first time. Cryptocore is a sample work for my resume.<br><br>
+**- Challanges**<br>
+Cryptocore was the first project I developed using Next.js. I had previously worked on this project using React, but once I learned Next.js, I was excited to quickly develop a project with this technology. This first project presented many challenges and enjoyable experiences for me, and I learned a lot along the way.<br>
+UI designer and developer [@MohammadSahragard](https://github.com/MohammadSahragard)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Technologies used
+- Next js
+- Next UI
+- Redux Toolkit
+- Apexcharts
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
+### Screen shots
+**Home page**<br>
+![image](https://github.com/MohammadSahragard/cryptocore/assets/77649975/ad0c8e00-b0ee-49a5-9229-45d678c143e5)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+**Coin page**<br>
+![image](https://github.com/MohammadSahragard/cryptocore/assets/77649975/6abd04d1-a245-4608-8c1d-f49a98b7cbcb)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Live demo
+<img src="https://github.com/MohammadSahragard/cryptocore/assets/77649975/b3bcadaa-ecd8-4b8b-8904-b4649db7d956" alt="live demo" width="100%" >
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+### Lisence
+MIT license [@MohammadSahragard](https://github.com/MohammadSahragard)
