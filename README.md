@@ -7,7 +7,7 @@ Access my site at [cryptocore-marketplace.vercel.app](https://cryptocore-marketp
 
 ---
 ### About the app
-Cryptocore is an exchange for digital currencies that gets its data from a real API ([CoinGecko](https://www.coingecko.com)). I designed the UI for this project myself and I believe it was a good experience for the first time. Cryptocore is a sample work for my resume.<br><br>
+Cryptocore is marketplace for cryptocurrencies that gets its data from a real API ([CoinGecko](https://www.coingecko.com)). I designed the UI for this project myself and I believe it was a good experience for the first time. Cryptocore is a sample work for my resume.<br><br>
 **- Challanges**<br>
 Cryptocore was the first project I developed using Next.js. I had previously worked on this project using React, but once I learned Next.js, I was excited to quickly develop a project with this technology. This first project presented many challenges and enjoyable experiences for me, and I learned a lot along the way.<br>
 UI designer and developer [@MohammadSahragard](https://github.com/MohammadSahragard)
