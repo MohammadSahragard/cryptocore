@@ -23,7 +23,7 @@ import Error from './error';
 
 
 export const metadata = {
-  title: 'Cryptocore | Greatest Crypto Market',
+  title: 'Cryptocore | Cryptocurrency marketplace',
   description: 'One of the biggest cryptocurrency market in web.',
   icons: '/images/logo.svg'
 };
