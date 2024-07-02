@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://github.com/MohammadSahragard/cryptocore/blob/main/public/images/logo.svg?raw=true" alt="cryptocore logo" width="100" >
-</p>
+![cryptocore banner](https://github.com/MohammadSahragard/cryptocore/assets/77649975/834202fe-0ab7-479e-8305-ef182013f3e2)
 
 # Cryptocore
 Access my site at [cryptocore-marketplace.vercel.app](https://cryptocore-marketplace.vercel.app)
